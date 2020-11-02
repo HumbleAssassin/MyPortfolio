@@ -1,0 +1,474 @@
+* {
+  --bg-nav: teal;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.loader {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: white url(../assets/loader/25.gif) no-repeat center;
+  z-index: 9999999999;
+}
+
+a,
+a:hover,
+a:active,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  color: white;
+}
+
+header .content {
+  z-index: 111;
+}
+
+header #header-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  z-index: -999;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  z-index: -999;
+}
+
+.logo {
+  font-family: "Gloria Hallelujah";
+  filter: drop-shadow(0 0 5px rgb(0, 0, 0, 0.5));
+}
+
+.logo h2 {
+  position: relative;
+  text-shadow: 1px 0 1px white;
+}
+
+.logo .lastname {
+  margin-left: 30px;
+  padding-top: 0;
+}
+
+.logo h2:before {
+  content: "";
+  position: absolute;
+  top: 15%;
+  left: 45%;
+  height: 60px;
+  width: 60px;
+  background: rgb(148, 1, 1);
+  transform: rotate(45deg);
+  z-index: -1;
+  transition: transform 900ms ease-in-out;
+}
+
+.logo:hover h2:before {
+  transform: rotate(585deg);
+}
+
+#social-media {
+  font-size: 20px;
+}
+
+#banner {
+  margin: 20% auto;
+  text-shadow: 0 0 8px black;
+  display: inline-block;
+}
+
+#banner .fullname {
+  font-family: "Cedarville Cursive";
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.red-text-shadow {
+  filter: drop-shadow(0 0 5px #c07503);
+  transition: filter 600ms ease;
+}
+
+#banner > div:hover .red-text-shadow {
+  filter: none;
+}
+
+.bg-nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: var(--bg-nav);
+  z-index: 99999;
+  box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.bg-nav:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: palegreen;
+}
+
+a.nav-link {
+  color: white !important;
+  padding: 15px 25px !important;
+}
+
+a.nav-link .fa {
+  margin-right: 5px;
+}
+
+a.nav-link:hover {
+  background: rgba(0, 0, 0, 0.125);
+}
+
+.parallax-container {
+  height: 800px;
+}
+
+.parallax {
+  background: url("./../assets/images/67135758_2475105095861683_1476992120123293696_o.jpg");
+  height: 110%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#aboutme .jumbotron {
+  position: relative;
+  background: linear-gradient(
+      to right,
+      rgba(2, 160, 160, 0.95),
+      rgba(2, 160, 160, 0.95)
+    ),
+    url("/assets/images/certs/Capture.PNG");
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 143px;
+  border-radius: 0;
+  box-shadow: 0 -4px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+#aboutme h6 {
+  padding: 10px 0;
+  font-size: 1.2rem;
+}
+
+#aboutme .img {
+  border-radius: 50%;
+  overflow: hidden;
+  filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.5));
+  margin-bottom: 10px;
+}
+
+#aboutme .img1 {
+  float: left;
+  width: 22vw;
+  height: 22vw;
+  shape-outside: circle();
+  margin-right: 30px;
+}
+
+#aboutme .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: rotateY(180deg);
+}
+
+#aboutme .img2 {
+  float: right;
+  width: 20vw;
+  height: 20vw;
+  shape-outside: circle();
+  margin-left: 20px;
+}
+
+.clear {
+  clear: both;
+}
+
+.jumbotron .wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 143px;
+  background: url("/assets/images/wave.png");
+  animation: wave 10000ms linear infinite;
+}
+
+.jumbotron .wave:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 143px;
+  background: url("/assets/images/wave.png");
+  opacity: 0.25;
+  transform: rotateY(180deg);
+  animation: wave-reverse 10000ms linear infinite;
+}
+
+@keyframes wave {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 1360px;
+  }
+}
+@keyframes wave-reverse {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 1360px;
+  }
+}
+
+.test {
+  height: 2000px;
+}
+
+/* for custom slider below */
+input[type="range"] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+  background: transparent; /* Otherwise white in Chrome */
+  margin-bottom: 40px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type="range"]:focus {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type="range"]::-ms-track {
+  width: 100%;
+  cursor: default;
+
+  /* Hides the slider so custom styles can be added */
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #000000;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #5bcf9f;
+  cursor: default;
+  margin-top: -7px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
+/* All the same stuff for Firefox */
+input[type="range"]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #5bcf9f;
+  cursor: default;
+}
+
+/* All the same stuff for IE */
+input[type="range"]::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #5bcf9f;
+  cursor: default;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: default;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #1b67aa;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: default;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #1b67aa;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+
+input[type="range"]::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: default;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+input[type="range"]::-ms-fill-lower {
+  background: #2a6495;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type="range"]:focus::-ms-fill-lower {
+  background: #3071a9;
+}
+input[type="range"]::-ms-fill-upper {
+  background: #3071a9;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type="range"]:focus::-ms-fill-upper {
+  background: #367ebd;
+}
+
+/* for custom slider above */
+
+.card {
+  position: relative;
+  padding: 0;
+  margin: 15px;
+  perspective: 800px;
+  border: none;
+  background: transparent;
+}
+
+.card .image {
+  transition: all 400ms ease-in-out;
+  box-shadow: 2px 2px 15px 1px rgba(15, 165, 105, 0.95);
+}
+
+.card:hover .image {
+  transform: rotateY(10deg);
+}
+
+.card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card .overlay {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: height 100ms ease, width 200ms ease;
+}
+
+.card:hover .overlay {
+  width: 100%;
+  height: 100%;
+}
+
+.card .overlay h4 a {
+  text-decoration: underline;
+}
+
+.card .overlay h4 {
+  display: none;
+  transition: height 100ms ease;
+  font-size: 0;
+  display: block;
+} 
+
+.card:hover .overlay h4 {
+  font-size: initial;
+  display: block;
+}
+
+.card .overlay h4 a:hover {
+  text-decoration: none;
+}
+
+footer {
+  position: relative;
+}
+
+footer .line {
+  height: 1px;
+  width: 20%;
+  background: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+footer .float-left p {
+  margin: 0;
+}
+
+@media screen and (max-width: 650px) {
+  header {
+    height: 450px;
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  header h5 {
+    font-size: 0.8rem;
+  }
+
+  .img1,
+  .img2 {
+    display: none;
+  }
+
+  .jumbotron h5 {
+    font-size: 20px;
+  }
+}

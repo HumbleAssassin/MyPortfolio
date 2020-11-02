@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/assets/images/logo/logo.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Gloria+Hallelujah&family=Open+Sans:wght@400;600;700;800&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>My Portfolio</title>
+  </head>
+  <body onload="hideLoader()">
+    <div class="loader"></div>
+    <header>
+      <video muted autoplay loop id="header-bg">
+        <source src="assets/videos/video.mp4" />
+      </video>
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="container py-3">
+          <div class="row">
+            <div class="col-1">
+              <div class="logo align-middle">
+                <a href="">
+                  <h2>Rajeev <span class="lastname">Thapa</span></h2>
+                </a>
+              </div>
+            </div>
+            <div
+              class="col-md-6 offset-md-5 text-right d-none d-md-block"
+              id="social-media"
+            >
+              <ul class="list-unstyled">
+                <li class="d-inline mr-4">
+                  <a
+                    href="https://www.facebook.com/rajeev.thapa.73"
+                    target="_blank"
+                    title="Link to my facebook page"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                </li>
+                <li class="d-inline mr-4">
+                  <a
+                    href="https://github.com/HumbleAssassin?tab=repositories"
+                    target="_blank"
+                    title="Link to my github ripo"
+                    ><i class="fa fa-github"></i
+                  ></a>
+                </li>
+                <li class="d-inline mr-4">
+                  <a
+                    href="https://www.youtube.com/channel/UCwSZxmjDHn0LTtRIZjLh1Og?view_as=subscriber"
+                    target="_blank"
+                    title="Link to my YouTube channel"
+                    ><i class="fa fa-youtube-play"></i
+                  ></a>
+                </li>
+                <li class="d-inline mr-4">
+                  <a
+                    href="https://www.youtube.com/channel/UCwSZxmjDHn0LTtRIZjLh1Og?view_as=subscriber"
+                    target="_blank"
+                    title="Link to my Discord Server"
+                    ><i class="fa fa-github-alt"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row" id="banner">
+            <div class="col-lg-8 offset-lg-2">
+              <h6 class="mb-0 ml-3 d-inline-block">
+                Hi, My Name is
+                <span class="text-danger fullname">Rajeev Thapa.</span>
+              </h6>
+              <h1 class="mt-0 text-uppercase">
+                I design / build
+                <span class="red-text-shadow">SEO friendly</span>,
+                <span class="red-text-shadow">semantic</span> and
+                <span class="red-text-shadow">aesthetically appealing</span>
+                websites.
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="bg-nav">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top py-0">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="./index.html"
+                  ><i class="fa fa-home"></i> Home
+                  <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#aboutme"
+                  ><i class="fa fa-info"></i> About Me</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects"
+                  ><i class="fa fa-cogs"></i> Projects</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills"
+                  ><i class="fa fa-soccer-ball-o"></i> Skill</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="./assets/images/cv/RajeevThapaResume.pdf"
+                  target="_blank"
+                  ><i class="fa fa-id-card"></i> CV</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="./assets/images/certs/Capture.PNG"
+                  target="_blank"
+                  ><i class="fa fa-id-card"></i> Certificates</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="parallax-container">
+      <div class="parallax"></div>
+    </div>
+    <section id="aboutme">
+      <div class="jumbotron">
+        <div class="container">
+          <div class="img img1">
+            <img src="assets/images/20200710002008_IMG_2202[1].png" alt="" />
+          </div>
+          <div class="img img2 mt-5">
+            <img src="assets/images/crop_image.png" alt="" />
+          </div>
+          <div class="text text-light">
+            <h5 class="mb-4">
+              I remained self-taught Web Development learner for 2 years until I
+              decided to seek professional guidance from an institute.
+            </h5>
+            <h6 class="mb-2">
+              However, learning attitude in me is still youthful and growing
+              more.
+            </h6>
+            <h6>
+              I love to read coding blogs, learn new frameworks and watch
+              tutorials during my free time.
+            </h6>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="wave"></div>
+      </div>
+    </section>
+
+    <section id="projects" class="bg-light">
+      <div class="container py-5">
+        <h4 class="font-weight-bolder mb-5">
+          Here are some of my latest projects/ practice projects
+        </h4>
+        <div class="d-lg-flex text-center justify-content-between">
+          <div class="card w-xl-50">
+            <div class="image">
+              <img src="./assets/images/works/round&round.PNG" alt="" />
+              <div class="overlay">
+                <h4 class="font-weight-bold text-white">
+                  <a
+                    href="https://humbleassassin.github.io/Round-and-Round-Tour/"
+                    target="_blank"
+                    >Round and Round Tours</a
+                  >
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="card w-xl-50">
+            <div class="image">
+              <img src="./assets/images/works/kids_science.PNG" alt="" />
+              <div class="overlay">
+                <h4 class="font-weight-bold text-white">
+                  <a
+                    href="https://humbleassassin.github.io/KidsScience/"
+                    target="_blank"
+                    >Kid's Science</a
+                  >
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-lg-flex text-center justify-content-between">
+          <div class="card w-xl-50">
+            <div class="image">
+              <img src="./assets/images/works/pikachu.PNG" alt="" />
+              <div class="overlay">
+                <h4 class="font-weight-bold text-white">
+                  <a
+                    href="https://humbleassassin.github.io/LeoSpa/"
+                    target="_blank"
+                    >Pikachu Consulting</a
+                  >
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="card w-xl-50">
+            <div class="image">
+              <img src="./assets/images/works/leospa.PNG" alt="" />
+              <div class="overlay">
+                <h4 class="font-weight-bold text-white">
+                  <a
+                    href="https://humbleassassin.github.io/LeoSpa/"
+                    target="_blank"
+                    >Leo Spa</a
+                  >
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container p-5">
+        <h3 class="p-5 font-weight-bolder">My Skills</h3>
+
+        <label for="html" class="font-weight-bolder">HTML</label>
+        <input
+          type="range"
+          name="html"
+          id="html"
+          value="90"
+          max-value="100"
+          disabled
+        />
+
+        <label for="css" class="font-weight-bolder pt-4">CSS</label>
+        <input
+          type="range"
+          name="css"
+          id="css"
+          value="80"
+          max-value="100"
+          disabled
+        />
+
+        <label for="Javascript" class="font-weight-bolder pt-4"
+          >Javascript</label
+        >
+        <input
+          type="range"
+          name="javascript"
+          id="javascript"
+          value="75"
+          max-value="100"
+          disabled
+        />
+
+        <label for="jQuery" class="font-weight-bolder pt-4">jQuery</label>
+        <input
+          type="range"
+          name="jquery"
+          id="jquery"
+          value="65"
+          max-value="100"
+          disabled
+        />
+
+        <label for="bootstrap" class="font-weight-bolder pt-4">Bootstrap</label>
+        <input
+          type="range"
+          name="bootstrap"
+          id="bootstrap"
+          value="75"
+          max-value="100"
+          disabled
+        />
+
+        <label for="node" class="font-weight-bolder pt-4">Node JS</label>
+        <input
+          type="range"
+          name="node"
+          id="node"
+          value="45"
+          max-value="100"
+          disabled
+        />
+
+        <label for="mongodb" class="font-weight-bolder pt-4">MongoDB</label>
+        <input
+          type="range"
+          name="mongodb"
+          id="mongodb"
+          value="50"
+          max-value="100"
+          disabled
+        />
+
+        <label for="express" class="font-weight-bolder pt-4">Express JS</label>
+        <input
+          type="range"
+          name="express"
+          id="express"
+          value="55"
+          max-value="100"
+          disabled
+        />
+
+        <label for="react" class="font-weight-bolder pt-4">React JS</label>
+        <input
+          type="range"
+          name="react"
+          id="react"
+          value="60"
+          max-value="100"
+          disabled
+        />
+      </div>
+    </section>
+
+    <footer>
+      <div id="disclaimer" class="bg-nav">
+        <div class="container py-5 text-white">
+            <div class="float-left">
+                <p><i class="fa fa-phone"> : <a href="callto:+9779813759336">+977 9813759336</a></i></p>
+                <p><i class="fa fa-envelope"></i> : <a href="mailto:thaparajeev1985@gmail.com">thaparajeev1985@gmail.com</a></p>
+                <p><i class="fa fa-address-book"></i> : New Baneshwor- 10, <br> <span class="ml-4 pl-1">Kathmandu, Nepal</span></p>
+            </div>
+            <div
+                class="text-right float-right"
+                id="social-media"
+            >
+                <p>Social Media</p>
+                <ul class="list-unstyled">
+                <li class="d-inline mr-4">
+                    <a
+                    href="https://www.facebook.com/rajeev.thapa.73"
+                    target="_blank"
+                    title="Link to my facebook page"
+                    ><i class="fa fa-facebook"></i
+                    ></a>
+                </li>
+                <li class="d-inline mr-4">
+                    <a
+                    href="https://github.com/HumbleAssassin?tab=repositories"
+                    target="_blank"
+                    title="Link to my github ripo"
+                    ><i class="fa fa-github"></i
+                    ></a>
+                </li>
+                <li class="d-inline mr-4">
+                    <a
+                    href="https://www.youtube.com/channel/UCwSZxmjDHn0LTtRIZjLh1Og?view_as=subscriber"
+                    target="_blank"
+                    title="Link to my YouTube channel"
+                    ><i class="fa fa-youtube-play"></i
+                    ></a>
+                </li>
+                <li class="d-inline mr-4">
+                    <a
+                    href="https://www.youtube.com/channel/UCwSZxmjDHn0LTtRIZjLh1Og?view_as=subscriber"
+                    target="_blank"
+                    title="Link to my Discord Server"
+                    ><i class="fa fa-github-alt"></i
+                    ></a>
+                </li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="line d-none d-lg-block"></div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/loader.js"></script>
+  </body>
+</html>
